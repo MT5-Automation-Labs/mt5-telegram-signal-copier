@@ -74,3 +74,7 @@ Trading forex, metals, indices and CFDs on margin carries a high level of risk a
 
 ## License
 MIT © 2026 StanleyDaniels
+
+## Contact
+
+Telegram: [t.me/teraus111](https://t.me/teraus111)
