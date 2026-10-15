@@ -1,0 +1,7 @@
+.env
+*.ex5
+__pycache__/
+*.pyc
+logs/
+*.session
+.pytest_cache/

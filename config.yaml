@@ -1,0 +1,25 @@
+channels:            # usernames or numeric ids
+  - my_signal_channel
+dry_run: true
+risk:
+  percent_per_trade: 1.0     # % of balance risked across all TP legs
+  max_lot: 5.0
+  min_lot_override: null
+symbols:                     # signal name -> broker symbol
+  GOLD: XAUUSD
+  XAUUSD: XAUUSD
+  EURUSD: EURUSD
+validation:
+  max_entry_deviation_pct: 0.5   # reject if entry is this far from current price
+  max_signal_age_sec: 120
+  duplicate_window_sec: 600
+  require_sl: true
+execution:
+  magic: 260101
+  deviation_points: 20
+  use_market_orders: true      # false = place pending at entry
+  tp_split: [0.5, 0.3, 0.2]    # volume share per TP; remainder goes on last TP
+  breakeven_after_tp: 1        # move SL to entry after TP1 hit
+  monitor_interval_sec: 5
+log:
+  dir: logs
